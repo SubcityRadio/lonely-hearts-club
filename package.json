@@ -1,6 +1,6 @@
 {
   "name": "lonely-hearts-club",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lonely Hearts club project for subcity.org",
   "main": "index.js",
   "scripts": {
