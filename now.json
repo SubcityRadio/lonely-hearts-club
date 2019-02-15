@@ -1,7 +1,8 @@
 {
     "version": 2,
     "builds": [
-      { "src": "next.config.js", "use": "@now/next" }
+      { "src": "next.config.js", "use": "@now/next" },
+      { "src": "verify/index.py", "use": "@now/python"}
     ],
     "env": {
       "FIREBASE_API_KEY": "@firebase_api_key",

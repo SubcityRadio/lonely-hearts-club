@@ -6,6 +6,9 @@ import { validate } from "../validation";
 class LonelyHeartForm extends Component {
   render() {
     const { handleSubmit } = this.props;
+    if (typeof window !== "undefined") {
+      window.handleSubmit = handleSubmit;
+    }
     return (
       <form id="question-section" onSubmit={handleSubmit}>
         <Field name="name" component={customInput} type="text" label="Name:" />
@@ -31,7 +34,14 @@ class LonelyHeartForm extends Component {
           label="Dream Date:"
         />
 
-        <button type="submit">Join</button>
+        <button
+          className="g-recaptcha"
+          data-sitekey="6LftmZEUAAAAAAJZV7_PJ8Orc0IBkklRoAXUCsvg"
+          data-callback="handleSubmit"
+          type="submit"
+        >
+          Join
+        </button>
         <style global jsx>{`
           #question-section {
             display: grid;
