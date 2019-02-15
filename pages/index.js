@@ -46,9 +46,9 @@ export default class Index extends React.Component {
               {" "}
               Join <br />
               Subcity Radio's
-              <br /> lonely
-              <br /> hearts
-              <br /> club
+              <br /> Lonely
+              <br /> Hearts
+              <br /> Club
             </p>
           </div>
           <br />
