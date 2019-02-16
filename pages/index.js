@@ -53,8 +53,32 @@ export default class Index extends React.Component {
           </div>
           <br />
           <LonelyHeartForm onSubmit={this.submit} />
+          <br />
+
+          <a href="https://subcity.org">
+            <img
+              src="/static/lonelyheartlogo-01.png"
+              alt="subcity lonely hearts logo"
+              width="35%"
+              className="float"
+            />
+          </a>
+
+          <a href="https://www.facebook.com/events/448457222356306/">
+            <p className="invitation">
+              Come to the Vic Bar tonight from 11 to find someone special ...
+            </p>
+          </a>
 
           <style global jsx>{`
+            .float {
+              float: left;
+            }
+            .invitation {
+              color: red;
+              text-decoration-line: inherit;
+            }
+
             #header-section {
               display: grid;
               grid-template-columns: 1fr;
